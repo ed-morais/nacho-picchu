@@ -1,11 +1,5 @@
 # web-programming-exam-1
 #### Develop a static page for a restaurant. </br>
-You must align the different foods and drinks using
-a CSS layout note.</br>
-You'll be adding prices, images, and you'll need to give it a nice look, using the
-proper combination of colors, font style and images. </br> 
-You can add photo gallery for different items
-feeding, you can also add slider images (carousel) for better look, add links
-for redirection to internal pages. </br>
-Make it responsive by setting a viewport, using
-media and grid queries.
+Using a CSS layout, align the various foods and drinks.</br> Include prices and images to enhance the appearance, and choose a suitable color scheme, font style, and images.</br>
+Consider adding a photo gallery and slider images (carousel) for an improved visual experience.</br>
+Include links for easy navigation to internal pages. Ensure the layout is responsive by setting a viewport and using media and grid queries.
