@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .flex-row {
@@ -18,7 +19,7 @@
   margin: 0 20px;
 }
 
-li > a {
+a {
   text-decoration: none;
   color: antiquewhite;
 }
@@ -29,6 +30,26 @@ li > a:hover {
 
 .header-image {
   background-image: url("/assets/header-bg.png");
+  background-size: cover;
+}
+
+.header-content {
+  position: absolute;
+  color: antiquewhite;
+  top: 20%;
+}
+
+.header-content > h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 70pt;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.header-content > p {
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 20%;
 }
 
 .title {
@@ -39,7 +60,7 @@ li > a:hover {
 .top-bar {
   justify-content: space-between;
   padding: 1.5em 30px;
-  height: 400px;
+  height: 100vh;
 }
 
 .items-center {
@@ -47,7 +68,7 @@ li > a:hover {
   justify-content: center;
 }
 
-.contact-btn {
+.color-btn {
   padding: 15px 25px;
   margin: 2px 2px;
   gap: 20px;
