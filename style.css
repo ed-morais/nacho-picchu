@@ -1,11 +1,11 @@
 /* CSS Variables */
 :root {
-  --white:#FFF;
-  --primary:#DF6751;
-  --secondary:#FE8B75;
-  --header-txt:#191D23;
-  --p:#75797F;
-  --bg-grey:#F8F9FB;
+  --white: #fff;
+  --primary: #df6751;
+  --secondary: #fe8b75;
+  --header-txt: #191d23;
+  --p: #75797f;
+  --bg-grey: #f8f9fb;
 }
 
 * {
@@ -72,7 +72,6 @@ li > a:hover {
   margin: 0 20%;
 }
 
-
 .title {
   color: antiquewhite;
   font-weight: bold;
@@ -130,7 +129,7 @@ li > a:hover {
   padding: 60px 60px;
 }
 
-.card{
+.card {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,8 +137,9 @@ li > a:hover {
   border-radius: 50px;
   width: 20rem;
   height: 25rem;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
 }
 
 .card img {
@@ -157,10 +157,16 @@ li > a:hover {
   font-size: 40px;
   font-family: serif;
   font-weight: 500;
+  margin-bottom: 50px;
 }
 
 #pizza > div > p {
   font-size: 1rem;
+  font-weight: 100;
+}
+
+.margin-text {
+  margin-bottom: 25px;
 }
 
 #pizza-content {
@@ -177,7 +183,27 @@ li > a:hover {
   padding: 5% 0 5% 10%;
 }
 
+#pizza-text {
+  display: flex;
+  flex-direction: column;
+}
+
+#pizza-text > nav {
+  flex-direction: row;
+}
+
 button {
   border: 0;
-  color: #F8F9FB;
+  color: #f8f9fb;
+  cursor: pointer;
+}
+
+#food-of-the-month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.food-month-card {
+  border-radius: 50px;
 }
