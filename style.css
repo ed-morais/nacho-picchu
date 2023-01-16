@@ -21,14 +21,6 @@
   grid-template-rows: repeat(3, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  /* display: grid; */
-  /* position: fixed;  */
-  /* /* top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0; */
-  /* grid-template-columns: 35fr 10fr; */
-  /* column-gap: var(--dds-spacing-m); */
 }
   
 .header { grid-area: 1 / 1 / auto / 2; }
@@ -124,11 +116,49 @@ li > a:hover {
 }
 
 #menu {
-  background-color:var(--bg-grey);
+  background-color: var(--bg-grey);
+  display: flex;
+  flex-direction: column;
 }
+
+.foods-menu h2 {
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  color: var(--header-txt);
+}
+
+.foods-menu > p {
+  color: var(--p);
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 20%;
+}
+
 .cards {
   flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 60px 60px;
 }
+
+.card{
+  display: flex;
+  flex-direction: column;
+  content: center;
+  border-radius: 50px;
+  width: 20rem;
+  height: 25rem;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  
+  width: 10rem;
+  height: auto;
+}
+
 #pizza {
   display: flex;
 }
