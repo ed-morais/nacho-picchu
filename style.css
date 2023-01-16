@@ -119,6 +119,7 @@ li > a:hover {
   background-color: var(--bg-grey);
   display: flex;
   flex-direction: column;
+  border-radius: 0px 0px 0px 100px;
 }
 
 .foods-menu h2 {
@@ -145,7 +146,8 @@ li > a:hover {
 .card{
   display: flex;
   flex-direction: column;
-  content: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 50px;
   width: 20rem;
   height: 25rem;
@@ -154,7 +156,6 @@ li > a:hover {
 }
 
 .card img {
-  
   width: 10rem;
   height: auto;
 }
