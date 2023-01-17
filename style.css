@@ -239,6 +239,12 @@ button {
   padding: auto;
 }
 
+.food-month-card {
+  margin: 30px 20px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+
+}
+
 .food-card-text {
   display: flex;
   flex-direction: column;
@@ -255,6 +261,7 @@ button {
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
+
 .food-month-card>p {
   max-width: 90%;
   justify-content: center;
