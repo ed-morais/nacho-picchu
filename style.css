@@ -240,9 +240,10 @@ button {
 }
 
 .food-month-card {
+  max-width: 400px;
   margin: 30px 20px;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
-
+  border-radius: 20px;
 }
 
 .food-card-text {
@@ -261,12 +262,29 @@ button {
   object-fit: cover;
   border-radius: 20px 20px 0 0;
 }
+
 .food-month-card > p {
   max-width: 90%;
   justify-content: center;
 }
 
 .food-title {
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.food-info {
+  padding: 20px;
+}
+
+.price-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-div > p {
   font-weight: bold;
 }
 
@@ -327,6 +345,7 @@ footer p:last-child {
   }
   .hamburger {
     display: block;
+    cursor: pointer;
   }
 
   .header-content {
