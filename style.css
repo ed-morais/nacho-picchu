@@ -47,6 +47,9 @@ li>a:hover {
   text-decoration: underline;
 }
 
+.hamburger {
+  display: none;
+}
 /* Make image expand with it's div */
 /* when in a mobile device, content get out of the div */
 .header-image {
@@ -71,6 +74,7 @@ li>a:hover {
   margin-bottom: 50px;
   margin-left: 10%;
   margin-right: 10%;
+
 }
 
 .header-content>p {
@@ -168,6 +172,7 @@ color-btn:hover {
 #pizza {
   display: flex;
   align-items: center;
+  height: 100vh;
 }
 
 #pizza>div>h2 {
@@ -196,9 +201,9 @@ color-btn:hover {
 }
 
 #pizza-img {
-  width: 35%;
-  min-width: 80px !important;
-  height: 35%;
+  width: 45%;
+  height: auto;
+  object-fit: cover;
   padding: 5% 0 5% 10%;
 }
 
@@ -259,11 +264,6 @@ button {
   font-weight: bold;
 }
 
-.price-div {
-  display: flex;
-  justify-content: space-around;
-}
-
 footer {
   background-color: #f2f2f2;
   padding: 30px;
@@ -298,7 +298,7 @@ footer p:last-child {
 }
 @media only screen and (max-width: 900px) {
   .header-content h2 {
-    font-size: 24px;
+    font-size: 50px;
   }
 
   .header-content p {
@@ -318,35 +318,29 @@ footer p:last-child {
 @media only screen and (max-width: 768px) {
   .menu {
     display: none;
-    display: none;
+  }
+  .hamburger{
+    display: block;
   }
 
   .header-content {
     text-align: center;
-    text-align: center;
   }
 
   .header-content h2 {
-    font-size: 28px;
     font-size: 28px;
   }
 
   .header-content p {
     font-size: 16px;
     width: 90%;
-    font-size: 16px;
-    width: 90%;
   }
 
   #header-content-btn {
     margin: 20px auto 0;
-    margin: 20px auto 0;
   }
 
   .header-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -355,16 +349,11 @@ footer p:last-child {
   .cards {
     flex-direction: column;
     align-items: center;
-    flex-direction: column;
-    align-items: center;
   }
 
   .card {
     margin: 10px auto;
-    margin: 10px auto;
   }
-  #pizza-img {
-    display: none;
 
   #pizza-content {
     width: 90%;
@@ -373,7 +362,7 @@ footer p:last-child {
 
   #pizza>div>h2 {
     color: var(--header-txt);
-    font-size: 23px;
+    font-size: 40px;
     font-family: "Times New Roman", Times, serif;
     font-weight: 500;
     margin-bottom: 50px;
@@ -396,7 +385,7 @@ footer p:last-child {
 /* styles for extra small screens (less than 480px) */
 @media only screen and (max-width: 480px) {
   .header-content h2 {
-    font-size: 24px;
+    font-size: 35px;
   }
 
   .header-content p {
