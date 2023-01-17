@@ -15,7 +15,6 @@
   font-family: "Roboto", sans-serif;
 }
 
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -67,7 +66,6 @@ li > a:hover {
   margin-bottom: 50px;
   margin-left: 10%;
   margin-right: 10%;
-  
 }
 
 .header-content > p {
@@ -221,18 +219,28 @@ button {
 .food-month-card {
   border-radius: 50px;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   overflow: auto;
 }
 
 .food-month-card > img {
-  width: 300px;
-  height: 200px;
+  height: 250px;
+  width: 100%;
+}
+
+.food-month-card > p,
+button {
+  padding: 10px 20px;
 }
 
 .food-title {
   font-weight: bold;
+}
+
+.price-div {
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {
@@ -271,38 +279,38 @@ footer p:last-child {
 /* styles for small screens (less than 768px) */
 @media only screen and (max-width: 768px) {
   .menu {
-      display: none;
+    display: none;
   }
 
   .header-content {
-      text-align: center;
+    text-align: center;
   }
 
   .header-content h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .header-content p {
-      font-size: 16px;
-      width: 90%;
+    font-size: 16px;
+    width: 90%;
   }
 
   #header-content-btn {
-      margin: 20px auto 0;
+    margin: 20px auto 0;
   }
   .header-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .cards {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   .card {
-      margin: 10px auto;
+    margin: 10px auto;
   }
-  #pizza-img{
-      display: none;
+  #pizza-img {
+    display: none;
   }
 }
