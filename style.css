@@ -108,8 +108,9 @@ li > a:hover {
   border-radius: 43px;
 }
 
-color-btn:hover {
-  background: var(--secondary);
+.hover-effect:hover {
+  background-color: var(--secondary);
+  /* color: var(--secondary); */
 }
 
 #header-content-btn {
