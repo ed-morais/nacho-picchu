@@ -14,23 +14,27 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
-
+body{
+  min-width: 200px;
+}
 
 .flex-row {
   display: flex;
   flex-direction: row;
 }
+
 .flex-column {
   display: flex;
   flex-direction: column;
 }
+
 /* make nabvar responsive again */
 .menu {
   justify-content: space-evenly;
   list-style-type: none;
 }
 
-.menu > li {
+.menu>li {
   margin: 0 20px;
 }
 
@@ -39,7 +43,7 @@ a {
   color: antiquewhite;
 }
 
-li > a:hover {
+li>a:hover {
   text-decoration: underline;
 }
 
@@ -60,17 +64,17 @@ li > a:hover {
   top: 20%;
 }
 
-.header-content > h2 {
+.header-content>h2 {
   font-family: "Times New Roman", Times, serif;
   font-size: 50pt;
   text-align: center;
   margin-bottom: 50px;
   margin-left: 10%;
   margin-right: 10%;
-  
+
 }
 
-.header-content > p {
+.header-content>p {
   font-weight: lighter;
   text-align: center;
   margin: 0 20%;
@@ -124,7 +128,7 @@ color-btn:hover {
   color: var(--header-txt);
 }
 
-.foods-menu > p {
+.foods-menu>p {
   color: var(--p);
   font-weight: lighter;
   text-align: center;
@@ -134,7 +138,9 @@ color-btn:hover {
 .cards {
   flex-wrap: wrap;
   justify-content: space-around;
-  padding: 60px 60px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  /* padding: 60px; */
 }
 
 .card {
@@ -150,7 +156,7 @@ color-btn:hover {
   margin-bottom: 50px;
 }
 
-.card > p {
+.card>p {
   margin: 5px;
 }
 
@@ -165,7 +171,7 @@ color-btn:hover {
   align-items: center;
 }
 
-#pizza > div > h2 {
+#pizza>div>h2 {
   color: var(--header-txt);
   font-size: 40px;
   font-family: "Times New Roman", Times, serif;
@@ -173,7 +179,7 @@ color-btn:hover {
   margin-bottom: 50px;
 }
 
-#pizza > div > p {
+#pizza>div>p {
   font-size: 1rem;
   font-weight: 100;
   color: var(--p);
@@ -202,7 +208,7 @@ color-btn:hover {
   flex-direction: column;
 }
 
-#pizza-text > nav {
+#pizza-text>nav {
   flex-direction: row;
 }
 
@@ -218,17 +224,36 @@ button {
   align-items: center;
 }
 
-.food-month-card {
-  border-radius: 50px;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
-  width: 300px;
-  height: 300px;
-  overflow: auto;
+#food-of-the-month > h2{
+  font-family: "Times New Roman", Times, serif;
+
 }
 
-.food-month-card > img {
-  width: 300px;
-  height: 200px;
+.food-month-cards {
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: auto;
+}
+
+.food-card-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  width: 17rem;
+  height: 25rem;
+}
+
+.food-month-card>img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.food-month-card>p {
+  max-width: 90%;
+  justify-content: center;
 }
 
 .food-title {
@@ -267,42 +292,104 @@ footer p:last-child {
   font-size: 12px;
   color: #999999;
 }
+@media only screen and (max-width: 900px) {
+  .header-content h2 {
+    font-size: 24px;
+  }
+
+  .header-content p {
+    font-size: 14px;
+  }
+
+  #pizza h2 {
+    font-size: 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
 
 /* styles for small screens (less than 768px) */
 @media only screen and (max-width: 768px) {
   .menu {
-      display: none;
+    display: none;
   }
 
   .header-content {
-      text-align: center;
+    text-align: center;
   }
 
   .header-content h2 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .header-content p {
-      font-size: 16px;
-      width: 90%;
+    font-size: 16px;
+    width: 90%;
   }
 
   #header-content-btn {
-      margin: 20px auto 0;
+    margin: 20px auto 0;
   }
+
   .header-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
   .cards {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   .card {
-      margin: 10px auto;
+    margin: 10px auto;
   }
-  #pizza-img{
-      display: none;
+
+  #pizza-content {
+    width: 90%;
+    height: auto;
+  }
+
+  #pizza>div>h2 {
+    color: var(--header-txt);
+    font-size: 23px;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+
+  #pizza .pizza-text {
+    display: flex; /* display flex container */
+    justify-content: center; /* center elements horizontally */
+    align-items: center; /* center elements vertically */
+  }
+  #pizza nav {
+    display:none ;
+  }
+
+  #pizza-img {
+    display: none;
+  }
+}
+
+/* styles for extra small screens (less than 480px) */
+@media only screen and (max-width: 480px) {
+  .header-content h2 {
+    font-size: 24px;
+  }
+
+  .header-content p {
+    font-size: 14px;
+  }
+
+  #pizza h2 {
+    font-size: 10px;
+  }
+
+  .card p {
+    font-size: 14px;
   }
 }
