@@ -15,6 +15,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -61,9 +62,12 @@ li > a:hover {
 
 .header-content > h2 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 70pt;
+  font-size: 50pt;
   text-align: center;
   margin-bottom: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  
 }
 
 .header-content > p {
@@ -264,3 +268,41 @@ footer p:last-child {
   color: #999999;
 }
 
+/* styles for small screens (less than 768px) */
+@media only screen and (max-width: 768px) {
+  .menu {
+      display: none;
+  }
+
+  .header-content {
+      text-align: center;
+  }
+
+  .header-content h2 {
+      font-size: 28px;
+  }
+
+  .header-content p {
+      font-size: 16px;
+      width: 90%;
+  }
+
+  #header-content-btn {
+      margin: 20px auto 0;
+  }
+  .header-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .cards {
+      flex-direction: column;
+      align-items: center;
+  }
+  .card {
+      margin: 10px auto;
+  }
+  #pizza-img{
+      display: none;
+  }
+}
