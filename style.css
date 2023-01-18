@@ -233,6 +233,10 @@ button {
   font-family: "Times New Roman", Times, serif;
 }
 
+food-of-the-month > p {
+  text-align: center;
+}
+
 .food-month-cards {
   flex-wrap: wrap;
   justify-content: space-around;
