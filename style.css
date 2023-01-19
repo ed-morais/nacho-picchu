@@ -1,6 +1,7 @@
 /* CSS Variables */
 :root {
   --white: #fff;
+  --antique:#f9f4ed;
   --primary: #df6751;
   --secondary: #fe8b75;
   --header-txt: #191d23;
@@ -41,7 +42,7 @@ body {
 
 a {
   text-decoration: none;
-  color: antiquewhite;
+  color: var(--antique);
 }
 
 li > a:hover {
@@ -64,7 +65,7 @@ li > a:hover {
   align-items: center;
   justify-content: center;
   position: absolute;
-  color: antiquewhite;
+  color: var(--antique);
   top: 20%;
 }
 
@@ -84,7 +85,7 @@ li > a:hover {
 }
 
 .title {
-  color: antiquewhite;
+  color: var(--antique);
   font-weight: bold;
 }
 
@@ -228,9 +229,19 @@ button {
   flex-direction: column;
   align-items: center;
 }
-
-#food-of-the-month > h2 {
+#food-of-the-month h2 {
   font-family: "Times New Roman", Times, serif;
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 20px;
+  color: var(--header-txt);
+}
+
+#food-of-the-month > p {
+  color: var(--p);
+  font-weight: lighter;
+  text-align: center;
+  margin: 0 20%;
 }
 
 food-of-the-month > p {
@@ -374,6 +385,9 @@ footer p:last-child {
     flex-direction: column;
     align-items: center;
   }
+  .foods-menu > p {
+    margin: 0 5%;
+  }
 
   .cards {
     flex-direction: column;
@@ -409,7 +423,9 @@ footer p:last-child {
   #pizza-img {
     display: none;
   }
-}
+  #food-of-the-month > p {
+    margin: 0 5%;
+  }
 
 /* styles for extra small screens (less than 480px) */
 @media only screen and (max-width: 480px) {
