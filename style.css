@@ -98,7 +98,7 @@ li > a:hover {
 .top-bar {
   justify-content: space-between;
   padding: 1.5em 30px;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .items-center {
@@ -173,8 +173,8 @@ li > a:hover {
 }
 
 .card img {
-  width: 15rem;
   height: 150px;
+  width: auto;
   margin-bottom: 40px;
 }
 
