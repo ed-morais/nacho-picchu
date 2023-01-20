@@ -124,7 +124,7 @@ li > a:hover {
   display: flex;
   flex-direction: column;
   border-radius: 0px 0px 0px 100px;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .foods-menu h2 {
@@ -447,4 +447,6 @@ footer p:last-child {
   .card p {
     font-size: 14px;
   }
+}
+
 }
