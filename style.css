@@ -181,7 +181,7 @@ li > a:hover {
 #pizza {
   display: flex;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 #pizza > div > h2 {
