@@ -64,6 +64,11 @@ li > a:hover {
     url("https://images.unsplash.com/photo-1546462669-4480cd5f00bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
   background-size: cover;
 }
+.about-us-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(https://images.unsplash.com/photo-1531065208531-4036c0dba3ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+  background-size: cover;
+}
 
 .header-content {
   display: flex;
@@ -195,7 +200,7 @@ li > a:hover {
 #pizza {
   display: flex;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 #pizza > div > h2 {
