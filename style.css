@@ -1,7 +1,7 @@
 /* CSS Variables */
 :root {
   --white: #fff;
-  --antique:#f9f4ed;
+  --antique: #f9f4ed;
   --primary: #df6751;
   --secondary: #fe8b75;
   --header-txt: #191d23;
@@ -59,6 +59,12 @@ li > a:hover {
   background-size: cover;
 }
 
+.contact-us-image {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("https://images.unsplash.com/photo-1546462669-4480cd5f00bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+  background-size: cover;
+}
+
 .header-content {
   display: flex;
   flex-direction: column;
@@ -78,11 +84,24 @@ li > a:hover {
   margin-right: 10%;
 }
 
+.header-content > h3 {
+  font-size: 20pt;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .header-content > p {
   font-size: 1rem;
   font-weight: lighter;
   text-align: center;
   margin: 0 20%;
+}
+
+.contact-section {
+  font-size: 15pt !important;
+  text-shadow: 2px 2px #0000009a;
 }
 
 .title {
@@ -347,6 +366,7 @@ footer p:last-child {
   font-size: 12px;
   color: #999999;
 }
+
 @media only screen and (max-width: 900px) {
   .header-content h2 {
     font-size: 50px;
@@ -434,19 +454,18 @@ footer p:last-child {
     margin: 0 5%;
   }
 
-/* styles for extra small screens (less than 480px) */
-@media only screen and (max-width: 480px) {
-  .header-content h2 {
-    font-size: 35px;
-  }
+  /* styles for extra small screens (less than 480px) */
+  @media only screen and (max-width: 480px) {
+    .header-content h2 {
+      font-size: 35px;
+    }
 
-  #pizza h2 {
-    font-size: 10px;
-  }
+    #pizza h2 {
+      font-size: 10px;
+    }
 
-  .card p {
-    font-size: 14px;
+    .card p {
+      font-size: 14px;
+    }
   }
-}
-
 }
