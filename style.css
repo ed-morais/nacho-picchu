@@ -61,7 +61,7 @@ li > a:hover {
 
 .contact-us-image {
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("https://images.unsplash.com/photo-1546462669-4480cd5f00bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    url("https://images.unsplash.com/photo-1421622548261-c45bfe178854?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1469&q=80");
   background-size: cover;
 }
 .about-us-img {
@@ -109,7 +109,8 @@ li > a:hover {
   text-shadow: 2px 2px #0000009a;
 }
 
-.title {
+.title  a{
+  font-family: "Times New Roman", Times, serif;
   color: var(--antique);
   font-weight: bold;
 }
@@ -465,6 +466,9 @@ footer p:last-child {
 
   /* styles for extra small screens (less than 480px) */
   @media only screen and (max-width: 480px) {
+    .top-bar {
+      height: 150vh;
+    }
     .header-content h2 {
       font-size: 35px;
     }
