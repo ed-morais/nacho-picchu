@@ -5,7 +5,7 @@ This is a website for the Nacho Picchu restaurant, created as part of a universi
 # Features
 <ul>
   <li>Homepage with a brief introduction to the restaurant, its concept and its menu</li>
-  <li>Menu page with a list of all the dishes that the restaurant serves</li>
+  <li>Menu section with a list of all the dishes that the restaurant serves</li>
   <li>About Us page with information about the history, mission and values of the restaurant</li>
   <li>Contact Us page with the restaurant's address, phone number, email and social media links</li>
 </ul>
